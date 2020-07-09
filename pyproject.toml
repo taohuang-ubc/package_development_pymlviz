@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "pymlviz"
+homepage = "https://github.com/UBC-MDS/pymlviz"
+repository = "https://github.com/UBC-MDS/pymlviz"
+documentation = 'https://pymlviz.readthedocs.io'
+version = "0.2.13"
+description = "Visualization package for ML models."
+authors = ["Anas Muhammad <anas.m.017@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pandas = "^1.0.1"
+numpy = "^1.18.1"
+matplotlib = "^3.1.3"
+python-semantic-release = "^4.10.0"
+scikit-learn = "^0.22.0"
+altair = "^3.2.0"
+
+[tool.poetry.dev-dependencies]
+pytest-cov = "^2.8.1"
+numpy = "^1.18"
+pandas = "^1.0"
+scikit-learn = "^0.22.0"
+sphinxcontrib-napoleon = "^0.7"
+sphinx = "^2.4.4"
+codecov = "^2.0.16"
+flake8 = "^3.7.9"
+
+[tool.semantic_release]
+version_variable = "pymlviz/__init__.py:__version__"
+version_source = "commit"
+upload_to_pypi = "false"
+patch_without_tag = "true"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
